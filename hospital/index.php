@@ -24,7 +24,7 @@ echo "<script>window.location.href ='index.php'</script>";
     <link rel="stylesheet" href="assets/css/fontawsom-all.min.css">
      <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/@tailwindcss/browser@4" rel="stylesheet">
 </head>
 <body>
   <div class="bg-gray-900">
