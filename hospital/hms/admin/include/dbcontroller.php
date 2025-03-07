@@ -1,6 +1,8 @@
 <?php
 $DB_host = "localhost";
+// define('DB_SERVER','localhost:8889');
 $DB_user = "root";
+$DB_pass = "root";
 $DB_pass = ")6A5ELakk.";
 $DB_name = "hms";
 try

@@ -20,20 +20,21 @@ echo "<script>window.location.href ='index.php'</script>";
     <title> Hospital management System </title>
 
     <link rel="shortcut icon" href="assets/images/fav.jpg">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/fontawsom-all.min.css">
      <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <link href="https://unpkg.com/@tailwindcss/browser@4" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" /> -->
+    <link href="./src/output.css" rel="stylesheet">
 </head>
 <body>
-  <div class="bg-gray-900">
+  
+<div class="bg-gray-900">
     <header class="absolute inset-x-0 top-0 z-50">
       <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
           <a href="#" class="-m-1.5 p-1.5">
-            <span class="sr-only">Your Company</span>
-            <img class="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500" alt="">
+            <!-- <span class="sr-only">Your Company</span> -->
+            <img class="h-32 w-100" src="./src/logo1.png" alt="">
           </a>
         </div>
         <div class="flex lg:hidden">
@@ -44,65 +45,39 @@ echo "<script>window.location.href ='index.php'</script>";
             </svg>
           </button>
         </div>
-        <div class="hidden lg:flex lg:gap-x-12">
-          <a href="#" class="text-sm/6 font-semibold text-white">Product</a>
-          <a href="#" class="text-sm/6 font-semibold text-white">Features</a>
-          <a href="#" class="text-sm/6 font-semibold text-white">Marketplace</a>
-          <a href="#" class="text-sm/6 font-semibold text-white">Company</a>
+        <div class="hidden lg:flex lg:gap-x-12 ">
+          <a href="#home" class="text-sm/8 font-semibold text-white ">Home</a>
+          <a href="#about" class="text-sm/8 font-semibold text-white">About</a>
+          <a href="#service" class="text-sm/8 font-semibold text-white">Services</a>
+          <a href="#notices" class="text-sm/8 font-semibold text-white">Notices</a>
+          <a href="#contact" class="text-sm/8 font-semibold text-white">Contact</a>
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" class="text-sm/6 font-semibold text-white">Log in <span aria-hidden="true">&rarr;</span></a>
+          <a href="./login.html" class="text-sm/8 font-semibold text-white">Log in <span aria-hidden="true">&rarr;</span></a>
         </div>
       </nav>
-      <!-- <div class="lg:hidden" role="dialog" aria-modal="true">
-        <div class="fixed inset-0 z-50"></div>
-        <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
-          <div class="flex items-center justify-between">
-            <a href="#" class="-m-1.5 p-1.5">
-              <span class="sr-only">Your Company</span>
-              <img class="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500" alt="">
-            </a>
-            <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-400">
-              <span class="sr-only">Close menu</span>
-              <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <div class="mt-6 flow-root">
-            <div class="-my-6 divide-y divide-gray-500/25">
-              <div class="space-y-2 py-6">
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Product</a>
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Features</a>
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Marketplace</a>
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Company</a>
-              </div>
-              <div class="py-6">
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-gray-800">Log in</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
+      
     </header>
   
-    <div class="relative isolate overflow-hidden pt-14">
-      <img src="./src/hospital.webp" alt="" class="absolute inset-0 -z-10 size-full object-cover">
+    <div id="home" class="relative isolate overflow-hidden pt-14">
+      <img src="./src/bag (1).webp" alt="" class="absolute inset-0 -z-10 size-full object-cover">
       <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
         <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
       </div>
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-          <div class="hidden sm:mb-8 sm:flex sm:justify-center">
-            <div class="relative rounded-full px-3 py-1 text-sm/6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
-              Announcing our next round of funding. <a href="#" class="font-semibold text-white"><span class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
+          <div class="hidden sm:mb-8 sm:flex sm:justify-center items-center">
+            <img src="./src/cancer2.png" class="h-12 w-12" alt="">
+            <div class="relative rounded-full px-3 py-1 text-sm/6 text-white  ring-1 ring-white/10 hover:ring-white/20">
+              <!-- <img src="./src/cancer2.png" class="h-20 w-20" alt=""> -->
+              Breast cancer : Think about screening <a href="#" class="font-semibold text-white"><span class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
             </div>
           </div>
           <div class="text-center">
-            <h1 class="text-balance text-5xl font-semibold tracking-tight text-white sm:text-7xl">Data to enrich your online business</h1>
-            <p class="mt-8 text-pretty text-lg font-medium text-gray-400 sm:text-xl/8">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.</p>
+            <h1 class="text-balance text-5xl font-semibold tracking-tight text-white sm:text-7xl">Welcome to Kibris Ilim Hospital</h1>
+            <p class="mt-8 text-pretty text-lg font-medium  sm:text-xl/8 text-white">"Your well-being at the heart of our priorities: discover your new hospital."</p>
             <div class="mt-10 flex items-center justify-center gap-x-6">
-              <a href="#" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">Get started</a>
+              <a href="./appointment.html" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">Get Appointment</a>
               <a href="#" class="text-sm/6 font-semibold text-white">Learn more <span aria-hidden="true">→</span></a>
             </div>
           </div>
@@ -114,24 +89,26 @@ echo "<script>window.location.href ='index.php'</script>";
     </div>
   </div>
 
-  <div class="bg-white py-24 sm:py-32">
+  <div id="about" class="bg-white py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl lg:text-center">
-        <h2 class="text-base/7 font-semibold text-indigo-600">Deploy faster</h2>
-        <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:text-balance">Everything you need to deploy your app</p>
-        <p class="mt-6 text-lg/8 text-gray-600">Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.</p>
+        <!-- <h2 class="text-base/7 font-semibold text-indigo-600">Deploy faster</h2> -->
+        <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:text-balance">About Us</p>
+        <p class="mt-6 text-lg/8 text-gray-600">Welcome to Kibris Ilim Hospital, where compassion meets excellence in healthcare. 
+          For 2024, we have been committed to delivering comprehensive medical care tailoindigo to the needs of our community.
+           Our state-of-the-art facility is designed to provide a healing environment that prioritizes your well-being and comfort.</p>
       </div>
       <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
         <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
           <div class="flex flex-col">
             <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-gray-900">
-              <svg class="size-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+              <!-- <svg class="size-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon"> -->
                 <path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 0 1-1.44-8.765 4.5 4.5 0 0 1 8.302-3.046 3.5 3.5 0 0 1 4.504 4.272A4 4 0 0 1 15 17H5.5Zm3.75-2.75a.75.75 0 0 0 1.5 0V9.66l1.95 2.1a.75.75 0 1 0 1.1-1.02l-3.25-3.5a.75.75 0 0 0-1.1 0l-3.25 3.5a.75.75 0 1 0 1.1 1.02l1.95-2.1v4.59Z" clip-rule="evenodd" />
-              </svg>
-              Push to deploy
+              <!-- </svg> -->
+              Comprehensive Services
             </dt>
             <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-600">
-              <p class="flex-auto">Commodo nec sagittis tortor mauris sed. Turpis tortor quis scelerisque diam id accumsan nullam tempus. Pulvinar etiam lacus volutpat eu. Phasellus praesent ligula sit faucibus.</p>
+              <p class="flex-auto">From preventive care to advanced treatments, we offer a full spectrum of medical services to address a wide range of health needs.</p>
               <p class="mt-6">
                 <a href="#" class="text-sm/6 font-semibold text-indigo-600">Learn more <span aria-hidden="true">→</span></a>
               </p>
@@ -139,13 +116,13 @@ echo "<script>window.location.href ='index.php'</script>";
           </div>
           <div class="flex flex-col">
             <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-gray-900">
-              <svg class="size-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+              <!-- <svg class="size-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon"> -->
                 <path fill-rule="evenodd" d="M10 1a4.5 4.5 0 0 0-4.5 4.5V9H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-.5V5.5A4.5 4.5 0 0 0 10 1Zm3 8V5.5a3 3 0 1 0-6 0V9h6Z" clip-rule="evenodd" />
-              </svg>
-              SSL certificates
+              <!-- </svg> -->
+              Experienced Professionals
             </dt>
             <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-600">
-              <p class="flex-auto">Pellentesque enim a commodo malesuada turpis eleifend risus. Facilisis donec placerat sapien consequat tempor fermentum nibh.</p>
+              <p class="flex-auto">Our team of doctors, nurses, and specialists are leaders in their fields, committed to providing personalized care.</p>
               <p class="mt-6">
                 <a href="#" class="text-sm/6 font-semibold text-indigo-600">Learn more <span aria-hidden="true">→</span></a>
               </p>
@@ -153,177 +130,324 @@ echo "<script>window.location.href ='index.php'</script>";
           </div>
           <div class="flex flex-col">
             <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-gray-900">
-              <svg class="size-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+              <!-- <svg class="size-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon"> -->
                 <path fill-rule="evenodd" d="M15.312 11.424a5.5 5.5 0 0 1-9.201 2.466l-.312-.311h2.433a.75.75 0 0 0 0-1.5H3.989a.75.75 0 0 0-.75.75v4.242a.75.75 0 0 0 1.5 0v-2.43l.31.31a7 7 0 0 0 11.712-3.138.75.75 0 0 0-1.449-.39Zm1.23-3.723a.75.75 0 0 0 .219-.53V2.929a.75.75 0 0 0-1.5 0V5.36l-.31-.31A7 7 0 0 0 3.239 8.188a.75.75 0 1 0 1.448.389A5.5 5.5 0 0 1 13.89 6.11l.311.31h-2.432a.75.75 0 0 0 0 1.5h4.243a.75.75 0 0 0 .53-.219Z" clip-rule="evenodd" />
-              </svg>
-              Simple queues
+              <!-- </svg> -->
+              Modern Facilities
             </dt>
             <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-600">
-              <p class="flex-auto">Pellentesque sit elit congue ante nec amet. Dolor aenean curabitur viverra suspendisse iaculis eget. Nec mollis placerat ultricies euismod ut condimentum.</p>
+              <p class="flex-auto">Equipped with the latest medical technology, our hospital is designed to deliver the highest standard of care in a safe and welcoming environment.</p>
               <p class="mt-6">
                 <a href="#" class="text-sm/6 font-semibold text-indigo-600">Learn more <span aria-hidden="true">→</span></a>
               </p>
             </dd>
           </div>
         </dl>
-      </div>
-    </div>
-  </div>
-
-  
-  <div class="bg-white">
-    <div class="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
-      <div class="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
-        <h2 class="text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl">Boost your productivity today</h2>
-        <p class="mx-auto mt-6 max-w-xl text-pretty text-lg/8 text-gray-300">Incididunt sint fugiat pariatur cupidatat consectetur sit cillum anim id veniam aliqua proident excepteur commodo do ea.</p>
-        <div class="mt-10 flex items-center justify-center gap-x-6">
-          <a href="#" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Get started</a>
-          <a href="#" class="text-sm/6 font-semibold text-white">Learn more <span aria-hidden="true">→</span></a>
+        <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+        <div class="mx-auto max-w-2xl lg:text-center">
+          <!-- <h2 class="text-base/7 font-semibold text-indigo-600">Deploy faster</h2> -->
+          <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:text-balance">Why Choose Us?</p>
+          <p class="mt-6 text-lg/8 text-gray-600">1.Patient-Centeindigo Care: Your health and comfort are our top priorities. We listen, we care, and we act with your best interests in mind. <br>
+            2.Innovation & Excellence: By embracing the latest medical advancements, we ensure you receive cutting-edge treatments and therapies. <br>            
+            3.Community Commitment: We are more than a hospital; we are a partner in your health journey, dedicated to enhancing the well-being of our community.</p>
         </div>
-        <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 size-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]" aria-hidden="true">
-          <circle cx="512" cy="512" r="512" fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)" fill-opacity="0.7" />
-          <defs>
-            <radialGradient id="827591b1-ce8c-4110-b064-7cb85a0b1217">
-              <stop stop-color="#7775D6" />
-              <stop offset="1" stop-color="#E935C1" />
-            </radialGradient>
-          </defs>
-        </svg>
+      </div>
       </div>
     </div>
   </div>
 
-  
-  <div class="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
-    <div class="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl" aria-hidden="true">
-      <div class="mx-auto aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+  <!-- Mission Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto text-center mb-16">
+            <!-- <div class="inline-block rounded-lg bg-indigo-100 px-3 py-1 text-sm font-semibold text-indigo-600 mb-6">
+                Notre Mission
+            </div> -->
+            <h2 class="text-4xl font-bold text-gray-900 mb-8">
+                <!-- Créée par des jeunes, <span class="text-indigo-600">pour inspirer</span> d'autres jeunes -->
+                 Services
+            </h2>
+            <!-- <p class="text-lg text-gray-600 mb-8">
+                Basé à Kinshasa, nous excellons dans divers domaines pour vous offrir des services de qualité supérieure.
+            </p> -->
+            <div class="w-24 h-1 bg-gradient-to-r mx-auto"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            <!-- Construction Card -->
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="./src/oph.png" 
+                         class="w-full h-full object-cover transform group-hover:scale-110 transition-all duration-500" 
+                         alt="Construction">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <h3 class="text-2xl font-bold text-white">Ophthalmology</h3>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-indigo-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Comprehensive Care and Expertise in Ophthalmology
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-indigo-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Clear Vision for a Better Future
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-indigo-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Excellence in Eye Health
+                        </li>
+                    </ul>
+                    <a href="#contact" class="mt-6 inline-flex items-center justify-center w-full px-6 py-3 bg-indigo-600 text-white rounded-xl hover:bg-indigo-700 transition-colors duration-300">
+                        <span class="mr-2">Learn More</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Voyage Card -->
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="./src/Cardiology.jpg" 
+                         class="w-full h-full object-cover transform group-hover:scale-110 transition-all duration-500" 
+                         alt="Voyage">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <h3 class="text-2xl font-bold text-white">Cardiology</h3>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-indigo-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Clinical Excellence and Personalized Care
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-indigo-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            A Center of Expertise for Heart Health
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-indigo-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Cutting-Edge Technology for Your Heart Health
+                        </li>
+                    </ul>
+                    <a href="#contact" class="mt-6 inline-flex items-center justify-center w-full px-6 py-3 bg-indigo-600 text-white rounded-xl hover:bg-indigo-700 transition-colors duration-300">
+                        <span class="mr-2">Learn More</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- E-commerce Card -->
+            <div id="service" class="bg-white rounded-2xl shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="h-48 overflow-hidden relative">
+                    <img src="./src/neurology.jpg" 
+                         class="w-full h-full object-cover transform group-hover:scale-110 transition-all duration-500" 
+                         alt="E-commerce">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <h3 class="text-2xl font-bold text-white">Neurology</h3>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-indigo-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Cutting-edge Care for the Brain and Nervous System</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-indigo-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Expertise and Innovation in Neurological Disorders</span>
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <svg class="w-5 h-5 text-indigo-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Prevention, Diagnosis, and Treatment of Neurological Diseases</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="mt-6 inline-flex items-center justify-center w-full px-6 py-3 bg-indigo-600 text-white rounded-xl hover:bg-indigo-700 transition-colors duration-300">
+                        <span class="mr-2">Learn More</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div id="service" class="bg-white rounded-2xl shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div class="h-48 overflow-hidden relative">
+                  <img src="./src/psy.jpg" 
+                       class="w-full h-full object-cover transform group-hover:scale-110 transition-all duration-500" 
+                       alt="E-commerce">
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                  <div class="absolute bottom-4 left-4">
+                      <h3 class="text-2xl font-bold text-white">Psychiatry</h3>
+                  </div>
+              </div>
+              <div class="p-6">
+                  <ul class="space-y-3">
+                      <li class="flex items-center text-gray-600">
+                          <svg class="w-5 h-5 text-indigo-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                          </svg>
+                          <span>Comprehensive Psychiatric Care</span>
+                      </li>
+                      <li class="flex items-center text-gray-600">
+                          <svg class="w-5 h-5 text-indigo-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                          </svg>
+                          <span>Patient-Centeindigo Approach</span>
+                      </li>
+                      <li class="flex items-center text-gray-600">
+                          <svg class="w-5 h-5 text-indigo-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                          </svg>
+                          <span>Innovation and Research</span>
+                      </li>
+                  </ul>
+                  <a href="#contact" class="mt-6 inline-flex items-center justify-center w-full px-6 py-3 bg-indigo-600 text-white rounded-xl hover:bg-indigo-700 transition-colors duration-300">
+                      <span class="mr-2">Learn More</span>
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                      </svg>
+                  </a>
+              </div>
+          </div>
+            <div id="service" class="bg-white rounded-2xl shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div class="h-48 overflow-hidden relative">
+                  <img src="./src/pediatry.jpg" 
+                       class="w-full h-full object-cover transform group-hover:scale-110 transition-all duration-500" 
+                       alt="E-commerce">
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                  <div class="absolute bottom-4 left-4">
+                      <h3 class="text-2xl font-bold text-white">Pediatry</h3>
+                  </div>
+              </div>
+              <div class="p-6">
+                  <ul class="space-y-3">
+                      <li class="flex items-center text-gray-600">
+                          <svg class="w-5 h-5 text-indigo-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                          </svg>
+                          <span>Specialized Care for Children</span>
+                      </li>
+                      <li class="flex items-center text-gray-600">
+                          <svg class="w-5 h-5 text-indigo-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                          </svg>
+                          <span>Comprehensive Care for Children</span>
+                      </li>
+                      <li class="flex items-center text-gray-600">
+                          <svg class="w-5 h-5 text-indigo-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                          </svg>
+                          <span>Child-Centeindigo Healthcare</span>
+                      </li>
+                  </ul>
+                  <a href="#contact" class="mt-6 inline-flex items-center justify-center w-full px-6 py-3 bg-indigo-600 text-white rounded-xl hover:bg-indigo-700 transition-colors duration-300">
+                      <span class="mr-2">Learn More</span>
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                      </svg>
+                  </a>
+              </div>
+          </div>
+            <div id="service" class="bg-white rounded-2xl shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div class="h-48 overflow-hidden relative">
+                  <img src="./src/generalist.jpg" 
+                       class="w-full h-full object-cover transform group-hover:scale-110 transition-all duration-500" 
+                       alt="E-commerce">
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                  <div class="absolute bottom-4 left-4">
+                      <h3 class="text-2xl font-bold text-white">Generalist</h3>
+                  </div>
+              </div>
+              <div class="p-6">
+                  <ul class="space-y-3">
+                      <li class="flex items-center text-gray-600">
+                          <svg class="w-5 h-5 text-indigo-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                          </svg>
+                          <span>Department of General Medicine</span>
+                      </li>
+                      <li class="flex items-center text-gray-600">
+                          <svg class="w-5 h-5 text-indigo-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                          </svg>
+                          <span>Primary Care Department</span>
+                      </li>
+                      <li class="flex items-center text-gray-600">
+                          <svg class="w-5 h-5 text-indigo-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                          </svg>
+                          <span>Department of Internal and General Medicine</span>
+                      </li>
+                  </ul>
+                  <a href="#contact" class="mt-6 inline-flex items-center justify-center w-full px-6 py-3 bg-indigo-600 text-white rounded-xl hover:bg-indigo-700 transition-colors duration-300">
+                      <span class="mr-2">Learn More</span>
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                      </svg>
+                  </a>
+              </div>
+          </div>
+        </div>
     </div>
-    <div class="mx-auto max-w-4xl text-center">
-      <h2 class="text-base/7 font-semibold text-indigo-600">Pricing</h2>
-      <p class="mt-2 text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-6xl">Choose the right plan for you</p>
-    </div>
-    <p class="mx-auto mt-6 max-w-2xl text-pretty text-center text-lg font-medium text-gray-600 sm:text-xl/8">Choose an affordable plan that’s packed with the best features for engaging your audience, creating customer loyalty, and driving sales.</p>
-    <div class="mx-auto mt-16 grid max-w-lg grid-cols-1 items-center gap-y-6 sm:mt-20 sm:gap-y-0 lg:max-w-4xl lg:grid-cols-2">
-      <div class="rounded-3xl rounded-t-3xl bg-white/60 p-8 ring-1 ring-gray-900/10 sm:mx-8 sm:rounded-b-none sm:p-10 lg:mx-0 lg:rounded-bl-3xl lg:rounded-tr-none">
-        <h3 id="tier-hobby" class="text-base/7 font-semibold text-indigo-600">Hobby</h3>
-        <p class="mt-4 flex items-baseline gap-x-2">
-          <span class="text-5xl font-semibold tracking-tight text-gray-900">$29</span>
-          <span class="text-base text-gray-500">/month</span>
-        </p>
-        <p class="mt-6 text-base/7 text-gray-600">The perfect plan if you&#039;re just getting started with our product.</p>
-        <ul role="list" class="mt-8 space-y-3 text-sm/6 text-gray-600 sm:mt-10">
-          <li class="flex gap-x-3">
-            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            25 products
-          </li>
-          <li class="flex gap-x-3">
-            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Up to 10,000 subscribers
-          </li>
-          <li class="flex gap-x-3">
-            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Advanced analytics
-          </li>
-          <li class="flex gap-x-3">
-            <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            24-hour support response time
-          </li>
-        </ul>
-        <a href="#" aria-describedby="tier-hobby" class="mt-8 block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:mt-10">Get started today</a>
-      </div>
-      <div class="relative rounded-3xl bg-gray-900 p-8 shadow-2xl ring-1 ring-gray-900/10 sm:p-10">
-        <h3 id="tier-enterprise" class="text-base/7 font-semibold text-indigo-400">Enterprise</h3>
-        <p class="mt-4 flex items-baseline gap-x-2">
-          <span class="text-5xl font-semibold tracking-tight text-white">$99</span>
-          <span class="text-base text-gray-400">/month</span>
-        </p>
-        <p class="mt-6 text-base/7 text-gray-300">Dedicated support and infrastructure for your company.</p>
-        <ul role="list" class="mt-8 space-y-3 text-sm/6 text-gray-300 sm:mt-10">
-          <li class="flex gap-x-3">
-            <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Unlimited products
-          </li>
-          <li class="flex gap-x-3">
-            <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Unlimited subscribers
-          </li>
-          <li class="flex gap-x-3">
-            <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Advanced analytics
-          </li>
-          <li class="flex gap-x-3">
-            <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Dedicated support representative
-          </li>
-          <li class="flex gap-x-3">
-            <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Marketing automations
-          </li>
-          <li class="flex gap-x-3">
-            <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-              <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-            </svg>
-            Custom integrations
-          </li>
-        </ul>
-        <a href="#" aria-describedby="tier-enterprise" class="mt-8 block rounded-md bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 sm:mt-10">Get started today</a>
-      </div>
-    </div>
-  </div>
-  
+</section>
   
   <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
-    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2850&q=80&blend=111827&blend-mode=multiply&sat=-100&exp=15" alt="" class="absolute inset-0 -z-10 size-full object-cover">
+    <img src="./src/21.webp" alt="" class="absolute inset-0 -z-10 size-full object-cover">
     <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
       <div class="absolute -bottom-8 -left-96 -z-10 transform-gpu blur-3xl sm:-bottom-64 sm:-left-40 lg:-bottom-32 lg:left-8 xl:-left-10" aria-hidden="true">
         <div class="aspect-[1266/975] w-[79.125rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
       </div>
       <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
-        <h2 class="text-base/8 font-semibold text-indigo-400">Our track record</h2>
-        <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl">Trusted by thousands of creators&nbsp;worldwide</p>
-        <p class="mt-6 text-lg/8 text-gray-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis.</p>
+        <!-- <h2 class="text-base/8 font-semibold text-indigo-400">Our track record</h2> -->
+        <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl">The numbers prove your trust</p>
+        <!-- <p class="mt-6 text-lg/8 text-gray-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis.</p> -->
       </div>
       <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-10 text-white sm:mt-20 sm:grid-cols-2 sm:gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
         <div class="flex flex-col gap-y-3 border-l border-white/10 pl-6">
-          <dt class="text-sm/6">Creators on the platform</dt>
-          <dd class="order-first text-3xl font-semibold tracking-tight">8,000+</dd>
+          <dt class="text-sm/6">Doctors</dt>
+          <dd class="order-first text-3xl font-semibold tracking-tight">30+</dd>
         </div>
         <div class="flex flex-col gap-y-3 border-l border-white/10 pl-6">
-          <dt class="text-sm/6">Flat platform fee</dt>
-          <dd class="order-first text-3xl font-semibold tracking-tight">3%</dd>
+          <dt class="text-sm/6">Departments</dt>
+          <dd class="order-first text-3xl font-semibold tracking-tight">10+</dd>
         </div>
         <div class="flex flex-col gap-y-3 border-l border-white/10 pl-6">
-          <dt class="text-sm/6">Uptime guarantee</dt>
-          <dd class="order-first text-3xl font-semibold tracking-tight">99.9%</dd>
+          <dt class="text-sm/6">Patients who received care</dt>
+          <dd class="order-first text-3xl font-semibold tracking-tight">161,641+</dd>
         </div>
-        <div class="flex flex-col gap-y-3 border-l border-white/10 pl-6">
-          <dt class="text-sm/6">Paid out to creators</dt>
-          <dd class="order-first text-3xl font-semibold tracking-tight">$70M</dd>
-        </div>
+        
       </dl>
+      <p class="mt-6 text-lg/8 text-gray-300">Statistics concern the year 2024</p>
     </div>
   </div>
 
-  
-  <div class="relative isolate bg-white pb-32 pt-24 sm:pt-32">
+  <div id="notices" class="relative isolate bg-white pb-32 pt-24 sm:pt-32">
     <div class="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl" aria-hidden="true">
       <div class="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
     </div>
@@ -332,13 +456,13 @@ echo "<script>window.location.href ='index.php'</script>";
     </div>
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl text-center">
-        <h2 class="text-base/7 font-semibold text-indigo-600">Testimonials</h2>
-        <p class="mt-2 text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">We have worked with thousands of amazing people</p>
+        <!-- <h2 class="text-base/7 font-semibold text-indigo-600">Testimonials</h2> -->
+        <p class="mt-2 text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Notices</p>
       </div>
       <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm/6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
         <figure class="rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
           <blockquote class="p-6 text-lg font-semibold tracking-tight text-gray-900 sm:p-12 sm:text-xl/8">
-            <p>“Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.”</p>
+            <p>“The staff at Kibris Ilim Hospital were incindigoibly compassionate and attentive. From the nurses to the doctors, everyone ensuindigo I felt comfortable and informed throughout my treatment. The facilities were clean and modern, and I truly felt I was in good hands. I highly recommend this hospital for anyone seeking quality care.”</p>
           </blockquote>
           <figcaption class="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap">
             <img class="size-10 flex-none rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80" alt="">
@@ -353,7 +477,7 @@ echo "<script>window.location.href ='index.php'</script>";
           <div class="space-y-8 xl:row-span-2">
             <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
               <blockquote class="text-gray-900">
-                <p>“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.”</p>
+                <p>“I visited Kibris Ilim Hospital for an emergency, and I was amazed at how quickly I was attended to. The team was extremely professional and took care of every detail. They explained my condition thoroughly and answeindigo all my questions. Thank you for making a stressful situation much easier!”</p>
               </blockquote>
               <figcaption class="mt-6 flex items-center gap-x-4">
                 <img class="size-10 rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
@@ -369,7 +493,7 @@ echo "<script>window.location.href ='index.php'</script>";
           <div class="space-y-8 xl:row-start-1">
             <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
               <blockquote class="text-gray-900">
-                <p>“Aut reprehenderit voluptatem eum asperiores beatae id. Iure molestiae ipsam ut officia rem nulla blanditiis.”</p>
+                <p>“I was admitted to Kibris Ilim Hospital for surgery, and I can't praise the staff enough for their kindness and support. They treated me like family and went out of their way to make my stay as comfortable as possible. It made all the difference during a difficult time.”</p>
               </blockquote>
               <figcaption class="mt-6 flex items-center gap-x-4">
                 <img class="size-10 rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
@@ -387,7 +511,7 @@ echo "<script>window.location.href ='index.php'</script>";
           <div class="space-y-8 xl:row-start-1">
             <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
               <blockquote class="text-gray-900">
-                <p>“Voluptas quos itaque ipsam in voluptatem est. Iste eos blanditiis repudiandae. Earum deserunt enim molestiae ipsum perferendis recusandae saepe corrupti.”</p>
+                <p>“We brought our 5-year-old daughter to Kibris Ilim Hospital, and the pediatric team was phenomenal. They were so patient and caring, making her feel safe and comfortable. The play area in the waiting room was also a great touch. We’re grateful for their expertise and compassion!”</p>
               </blockquote>
               <figcaption class="mt-6 flex items-center gap-x-4">
                 <img class="size-10 rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
@@ -403,7 +527,7 @@ echo "<script>window.location.href ='index.php'</script>";
           <div class="space-y-8 xl:row-span-2">
             <figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
               <blockquote class="text-gray-900">
-                <p>“Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum.”</p>
+                <p>“I can’t thank Kibris Ilim Hospital enough for saving my life. I had a heart attack, and their cardiology team responded immediately. Their expertise and state-of-the-art equipment made all the difference. I’m forever grateful for the exceptional care I received.”</p>
               </blockquote>
               <figcaption class="mt-6 flex items-center gap-x-4">
                 <img class="size-10 rounded-full bg-gray-50" src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
@@ -436,32 +560,32 @@ echo "<script>window.location.href ='index.php'</script>";
   </div>
 
   
-  <div class="bg-white py-24 sm:py-32">
+  <div id="office" class="bg-white py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl lg:mx-0">
         <h2 class="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Our offices</h2>
-        <p class="mt-6 text-lg/8 text-gray-600">Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.</p>
+        <p class="mt-6 text-lg/8 text-gray-600">We collaborate with various partner hospitals located in different cities.</p>
       </div>
       <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 text-base/7 sm:grid-cols-2 sm:gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
         <div>
-          <h3 class="border-l border-indigo-600 pl-6 font-semibold text-gray-900">Los Angeles</h3>
+          <h3 class="border-l border-indigo-600 pl-6 font-semibold text-gray-900">DR Congo</h3>
           <address class="border-l border-gray-200 pl-6 pt-2 not-italic text-gray-600">
-            <p>4556 Brendan Ferry</p>
-            <p>Los Angeles, CA 90210</p>
+            <p>70 Sunga Biso</p>
+            <p>Kinshasa, KS 012</p>
           </address>
         </div>
         <div>
-          <h3 class="border-l border-indigo-600 pl-6 font-semibold text-gray-900">New York</h3>
+          <h3 class="border-l border-indigo-600 pl-6 font-semibold text-gray-900">Nigeria</h3>
           <address class="border-l border-gray-200 pl-6 pt-2 not-italic text-gray-600">
-            <p>886 Walter Street</p>
-            <p>New York, NY 12345</p>
+            <p>886 Brook Street</p>
+            <p>Lagos, LG 12345</p>
           </address>
         </div>
         <div>
-          <h3 class="border-l border-indigo-600 pl-6 font-semibold text-gray-900">Toronto</h3>
+          <h3 class="border-l border-indigo-600 pl-6 font-semibold text-gray-900">South Africa</h3>
           <address class="border-l border-gray-200 pl-6 pt-2 not-italic text-gray-600">
-            <p>7363 Cynthia Pass</p>
-            <p>Toronto, ON N3Y 4H8</p>
+            <p>7363 Kamp street</p>
+            <p>Cape Town, CP N3Y 4H8</p>
           </address>
         </div>
         <div>
@@ -480,8 +604,8 @@ echo "<script>window.location.href ='index.php'</script>";
     <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
         <div class="space-y-8">
-          <img class="h-9" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600" alt="Company name">
-          <p class="text-balance text-sm/6 text-gray-600">Making the world a better place through constructing elegant hierarchies.</p>
+          <img class="h-48" src="./src/logo 2.png" alt="Company name">
+          <p class="text-balance text-sm/6 text-gray-600">Follow Us</p>
           <div class="flex gap-x-6">
             <a href="#" class="text-gray-600 hover:text-gray-800">
               <span class="sr-only">Facebook</span>
@@ -518,23 +642,23 @@ echo "<script>window.location.href ='index.php'</script>";
         <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
-              <h3 class="text-sm/6 font-semibold text-gray-900">Solutions</h3>
+              <h3 class="text-sm/6 font-semibold text-gray-900">Exams</h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li>
-                  <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Marketing</a>
+                  <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">3D Mammography</a>
                 </li>
                 <li>
-                  <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Analytics</a>
+                  <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Amniocentesis</a>
                 </li>
                 <li>
-                  <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Automation</a>
+                  <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Calcium Score</a>
                 </li>
                 <li>
-                  <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Commerce</a>
+                  <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Cardiac MRI</a>
                 </li>
-                <li>
+                <!-- <li>
                   <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Insights</a>
-                </li>
+                </li> -->
               </ul>
             </div>
             <div class="mt-10 md:mt-0">
@@ -557,16 +681,19 @@ echo "<script>window.location.href ='index.php'</script>";
               <h3 class="text-sm/6 font-semibold text-gray-900">Company</h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li>
+                  <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Home</a>
+                </li>
+                <li>
                   <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">About</a>
                 </li>
                 <li>
-                  <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Blog</a>
+                  <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Our Services</a>
                 </li>
                 <li>
-                  <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Jobs</a>
+                  <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Testimonials</a>
                 </li>
                 <li>
-                  <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Press</a>
+                  <a href="#" class="text-sm/6 text-gray-600 hover:text-gray-900">Our Offices</a>
                 </li>
               </ul>
             </div>
@@ -588,7 +715,7 @@ echo "<script>window.location.href ='index.php'</script>";
         </div>
       </div>
       <div class="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24">
-        <p class="text-sm/6 text-gray-600">&copy; 2024 HMS, Inc. All rights reserved.</p>
+        <p class="text-sm/6 text-gray-600">&copy; 2025 Your Company, Inc. All rights reserved.</p>
       </div>
     </div>
   </footer>
