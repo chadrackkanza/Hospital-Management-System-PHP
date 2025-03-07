@@ -53,7 +53,7 @@ echo "<script>window.location.href ='index.php'</script>";
           <a href="#contact" class="text-sm/8 font-semibold text-white">Contact</a>
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="./login.html" class="text-sm/8 font-semibold text-white">Log in <span aria-hidden="true">&rarr;</span></a>
+          <a href="hms/user-login.php" class="text-sm/8 font-semibold text-white">Log in <span aria-hidden="true">&rarr;</span></a>
         </div>
       </nav>
       
@@ -77,7 +77,7 @@ echo "<script>window.location.href ='index.php'</script>";
             <h1 class="text-balance text-5xl font-semibold tracking-tight text-white sm:text-7xl">Welcome to Kibris Ilim Hospital</h1>
             <p class="mt-8 text-pretty text-lg font-medium  sm:text-xl/8 text-white">"Your well-being at the heart of our priorities: discover your new hospital."</p>
             <div class="mt-10 flex items-center justify-center gap-x-6">
-              <a href="./appointment.html" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">Get Appointment</a>
+              <a href="hms/user-login.php" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">Get Appointment</a>
               <a href="#" class="text-sm/6 font-semibold text-white">Learn more <span aria-hidden="true">→</span></a>
             </div>
           </div>
